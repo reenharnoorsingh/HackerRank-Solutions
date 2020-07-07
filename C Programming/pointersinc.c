@@ -7,7 +7,8 @@ void update(int *a,int *b) {
     *b= abs(*a-(2**b));
 }
 
-int main() {
+int main() 
+{
     int a, b;
     int *pa = &a, *pb = &b;
     
