@@ -9,9 +9,9 @@ int main()
     {
         for (int j = 0; j < len; j++)
         {
-            int min = i < j ? i : j;
-            min = min < len - i ? min : len - i - 1;
-            min = min < len - j - 1 ? min : len - j - 1;
+            int min = i < j ? i : j;                     //minimum difference between vertical and horizontal sides
+            min = min < len - i ? min : len - i - 1;     //minimum difference between vertical sides
+            min = min < len - j - 1 ? min : len - j - 1; //minimum difference between horizontal sides
             printf("%d ", n - min);
         }
         printf("\n");
